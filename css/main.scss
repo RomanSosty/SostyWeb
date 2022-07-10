@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@400;700&display=swap');
+
+:root{
+    --primary-color: #FF0000;
+}
+
+body{
+    background:  #1C1C1C;
+    margin: 0;
+    font-family: 'Palanquin';
+}
+
+.navbar{
+    padding: 1.5em;
+
+    .logo{
+        text-decoration: none;
+        font-size: 2em;
+        color: white;
+    }
+
+    nav {
+        display: flex;
+        height: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        flex: 50%;
+        margin: 0;
+        margin-top: 1.2em; 
+    }
+
+    a{
+        color:white;
+        text-decoration: none;
+        padding: .1em 1.5em;
+    }
+
+    .current{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+
+span{
+    color: var(--primary-color);
+}
+
+.container {
+    display: flex;
+    place-content: space-between;
+}
+
+.hero{
+    margin-left: 5.5em ;
+    display: flex;
+    margin-top: 3em;
+}
+
+.hi{
+    color: white;  
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-img{
+    width: 20%;
+    margin-right: 8.5em;
+}
+
+.subhead{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.primary-cta{
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: .6em 1.3em;
+    border-radius: 5em;
+}
+.hero-cta{
+    margin-top: 3em;
+}
