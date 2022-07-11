@@ -11,6 +11,7 @@ body {
 
 .navbar {
   padding: 1.5em;
+  display: grid;
 }
 .navbar .logo {
   text-decoration: none;
@@ -40,20 +41,23 @@ body {
   font-weight: bold;
   text-decoration: underline;
 }
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
 
 span {
   color: var(--primary-color);
 }
 
-.container {
+.hero {
+  display: grid;
+  padding: 2em 0 0 3em;
+  grid-template-columns: 4fr 1fr;
+}
+.hero .container {
   display: flex;
   place-content: space-between;
-}
-
-.hero {
-  margin-left: 5.5em;
-  display: flex;
-  margin-top: 3em;
 }
 
 .hi {
@@ -70,7 +74,6 @@ h1 {
 
 .hero-img {
   width: 20%;
-  margin-right: 8.5em;
 }
 
 .subhead {
@@ -89,4 +92,23 @@ h1 {
 
 .hero-cta {
   margin-top: 3em;
+}
+
+.features {
+  color: white;
+  margin: 0;
+  display: grid;
+  padding-top: 3em;
+}
+.features .container {
+  display: flex;
+  flex-direction: column;
+}
+.features .subfeatures {
+  align-self: flex-end;
+  padding-right: 3em;
+}
+.features .feature-list {
+  align-self: flex-end;
+  padding-right: 15em;
 }/*# sourceMappingURL=main.css.map */

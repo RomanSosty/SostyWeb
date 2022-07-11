@@ -12,6 +12,7 @@ body{
 
 .navbar{
     padding: 1.5em;
+    display: grid;
 
     .logo{
         text-decoration: none;
@@ -45,21 +46,28 @@ body{
         font-weight: bold;
         text-decoration: underline;
     }
+
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
 }
 
 span{
     color: var(--primary-color);
 }
 
-.container {
-    display: flex;
-    place-content: space-between;
-}
+
 
 .hero{
-    margin-left: 5.5em ;
-    display: flex;
-    margin-top: 3em;
+    display: grid;
+    padding: 2em 0 0 3em;
+    grid-template-columns: 4fr 1fr;
+
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
 }
 
 .hi{
@@ -76,8 +84,8 @@ h1{
 
 .hero-img{
     width: 20%;
-    margin-right: 8.5em;
 }
+
 
 .subhead{
     padding: 0;
@@ -95,3 +103,26 @@ h1{
 .hero-cta{
     margin-top: 3em;
 }
+
+.features{
+    color: white;
+    margin: 0;
+    display: grid;
+    padding-top: 3em;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subfeatures{
+        align-self:  flex-end;
+        padding-right: 3em;
+    }
+    .feature-list{
+        align-self: flex-end;
+        padding-right: 15em;
+    }
+}
+
+
