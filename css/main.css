@@ -28,9 +28,8 @@ body {
   display: flex;
   list-style-type: none;
   padding: 0;
-  flex: 50%;
-  margin: 0;
-  margin-top: 1.2em;
+  justify-content: center;
+  margin: 1.2em 10em 0 0;
 }
 .navbar a {
   color: white;
@@ -52,7 +51,7 @@ span {
 
 .hero {
   display: grid;
-  padding: 2em 0 0 3em;
+  padding: 2em 0 0 7em;
   grid-template-columns: 4fr 1fr;
 }
 .hero .container {
@@ -64,22 +63,26 @@ span {
   color: white;
   padding: 0;
   margin: 0;
+  font-size: 1.5em;
 }
 
 h1 {
   color: white;
   padding: 0;
   margin: 0;
+  font-size: 4em;
 }
 
 .hero-img {
   width: 20%;
+  padding-left: 18em;
 }
 
 .subhead {
   padding: 0;
   margin: 0;
   color: white;
+  font-size: 1.1em;
 }
 
 .primary-cta {
@@ -88,6 +91,11 @@ h1 {
   text-decoration: none;
   padding: 0.6em 1.3em;
   border-radius: 5em;
+  cursor: pointer;
+}
+.primary-cta:hover {
+  background-color: white;
+  color: var(--primary-color);
 }
 
 .hero-cta {
@@ -98,17 +106,47 @@ h1 {
   color: white;
   margin: 0;
   display: grid;
-  padding-top: 3em;
+  grid-template-columns: 1fr 1fr;
 }
 .features .container {
   display: flex;
   flex-direction: column;
 }
 .features .subfeatures {
-  align-self: flex-end;
-  padding-right: 3em;
+  padding: 4em 3em 0 6em;
+  font-size: 1.1em;
 }
 .features .feature-list {
-  align-self: flex-end;
-  padding-right: 15em;
+  padding-left: 10em;
+}
+.features .img-gallery {
+  display: flex;
+  align-self: center;
+  padding: 0 0 0 10em;
+}
+.features .bench {
+  width: 40%;
+}
+
+@media only screen and (max-width: 1013px) {
+  .hero-img {
+    display: none;
+  }
+  .features {
+    grid-template-columns: 1fr;
+  }
+  .bench {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1520px) {
+  h1 {
+    font-size: 2em;
+  }
+  .subhead {
+    font-size: 1em;
+  }
+  .subfeatures {
+    font-size: 1em;
+  }
 }/*# sourceMappingURL=main.css.map */
