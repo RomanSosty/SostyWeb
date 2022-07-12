@@ -135,24 +135,23 @@ h1{
     .feature-list{
         padding-left: 10em;
     }
+}
 
-    .img-gallery{
-        display: flex;
-        align-self: center;
-        padding: 0 0 0 10em;
-      
-    }
+.img-gallery{
+    display: flex;
+    align-self: center;
+    padding: 0 0 0 10em;
+  
+}
 
-    .bench {
-        width: 40%;
-        cursor: pointer;
+.bench {
+    width: 40%;
+    cursor: pointer;
 
-        &:hover {
-            transform: scale(0.8) rotate(-15deg);
-            border-radius: 5%;
-         }
-    }
-    
+    &:hover {
+        transform: scale(0.8) rotate(-15deg);
+        border-radius: 5%;
+     }
 }
 
 @media only screen and (max-width:1013px) {
