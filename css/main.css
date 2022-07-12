@@ -49,10 +49,14 @@ span {
   color: var(--primary-color);
 }
 
+.container {
+  display: flex;
+}
+
 .hero {
   display: grid;
   padding: 2em 0 0 7em;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .hero .container {
   display: flex;
@@ -75,7 +79,7 @@ h1 {
 
 .hero-img {
   width: 20%;
-  padding-left: 18em;
+  padding: 0 10em 0 0;
 }
 
 .subhead {
@@ -106,7 +110,7 @@ h1 {
   color: white;
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .features .container {
   display: flex;
@@ -126,6 +130,11 @@ h1 {
 }
 .features .bench {
   width: 40%;
+  cursor: pointer;
+}
+.features .bench:hover {
+  transform: scale(0.8) rotate(-15deg);
+  border-radius: 5%;
 }
 
 @media only screen and (max-width: 1013px) {
