@@ -10,8 +10,10 @@ body {
 }
 
 .navbar {
-  padding: 1.5em;
+  margin-top: 1.5em;
+  padding: 0.3em 1.5em 0 1.5em;
   display: grid;
+  background-color: black;
 }
 .navbar .logo {
   text-decoration: none;
@@ -108,7 +110,7 @@ h1 {
 
 .features {
   color: white;
-  margin: 0;
+  margin: 2em 2em 0 2em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
