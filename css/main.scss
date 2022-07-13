@@ -13,7 +13,7 @@ body{
 .navbar{
     margin-top: 1.5em;
     background-color: black;
-    
+
     .container {
         display: grid;
        // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -50,6 +50,10 @@ body{
             font-size: 2em;
             color: white;
             justify-content: center;
+
+            span{
+                color: var(--primary-color);
+            }
         }
 
         .odkazy {
@@ -74,29 +78,8 @@ body{
             }
         }
 
-    }
-
-
-   
-
-   
-    
-
-   
-
-    
-
-   
+    }   
 }
-
-span{
-    color: var(--primary-color);
-}
-
-.container {
-    display: flex;
-}
-
 
 .hero{
     display: grid;
@@ -107,55 +90,61 @@ span{
         display: flex;
         place-content: space-between;
     }
-}
 
-.hi{
-    color: white;  
-    padding: 0;
-    margin: 0;
-    font-size: 1.5em;
-}
+    .hi{
+        color: white;  
+        padding: 0;
+        margin: 0;
+        font-size: 1.5em;
+    }
 
-h1{
-    color: white;
-    padding: 0;
-    margin: 0;
-    font-size: 4em;
-}
+    h1{
+        color: white;
+        padding: 0;
+        margin: 0;
+        font-size: 4em;
+    }
+    .right-col{
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-.hero-img{
-    width: 20%;
-    padding: 0 10em 0 0;
-}
+        .hero-img{
+            width: 20%;  
+            }
+    }
 
-
-.subhead{
-    padding: 0;
-    margin: 0;
-    color: white;
-    font-size: 1.1em;
-}
-
-.primary-cta{
-    background-color: var(--primary-color);
-    color: white;
-    text-decoration: none;
-    padding: .6em 1.3em;
-    border-radius: 5em;
-    cursor: pointer;
-
-    &:hover {
-        background-color: white;
-        color: var(--primary-color); 
+    .subhead{
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-size: 1.1em;
     }
 }
+
+
 .hero-cta{
     margin-top: 3em;
+
+    .primary-cta{
+        background-color: var(--primary-color);
+        color: white;
+        text-decoration: none;
+        padding: .6em 1.3em;
+        border-radius: 5em;
+        cursor: pointer;
+        font-weight: bold;
+    
+        &:hover {
+            background-color: white;
+            color: var(--primary-color); 
+        }
+    }
 }
 
 .features{
     color: white;
-    margin: 2em 2em 0 2em;
+    padding: 2em 0 0 7em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
@@ -163,11 +152,10 @@ h1{
     .container {
      display: flex;
      flex-direction: column;
-     
     }
 
     .subfeatures{
-        padding: 4em 3em 0 6em;
+        padding: 4em 3em 0 0;
         font-size: 1.1em;
     }
 
@@ -179,7 +167,8 @@ h1{
 .img-gallery{
     display: flex;
     align-self: center;
-    padding: 0 0 0 10em;
+    justify-content: center;
+    padding: 6em 0 0 0;
   
 }
 
@@ -193,6 +182,58 @@ h1{
      }
 }
 
+.contactMe{
+    display: grid;
+    padding: 4em 0 0 7em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    .container{
+        display: flex;
+        place-content: space-between;
+
+        .contact-left{
+            width: 100%;
+        }
+        h2{
+            color: white;
+        }
+        label{
+            display: block;
+            color: white;
+        }
+
+        input, textarea{
+            width: 70%;
+            border-radius: .3em;
+            padding: .8em;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"]{
+            background-color: var(--primary-color);
+            color: white;
+            font-size: .8em;
+            font-weight: bold;
+            border: none;
+            border-radius: 5em;
+            cursor: pointer;
+            padding: .8em 2em;
+            display: flex;
+            width: unset;
+
+            &:hover{
+                background-color: white;
+                color: var(--primary-color);
+            }
+        }
+
+        .contact-right{
+            padding: 3em 3em 3em 0;
+        }
+    }
+}
+
 @media only screen and (max-width:1013px) {
 
     .hero-img{
@@ -204,6 +245,10 @@ h1{
     }
 
     .bench {
+        display: none;
+    }
+
+    iframe{
         display: none;
     }
 }
