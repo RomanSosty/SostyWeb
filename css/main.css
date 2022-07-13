@@ -11,40 +11,58 @@ body {
 
 .navbar {
   margin-top: 1.5em;
-  padding: 0.3em 1.5em 0 1.5em;
-  display: grid;
   background-color: black;
 }
-.navbar .logo {
-  text-decoration: none;
-  font-size: 2em;
-  color: white;
+.navbar .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
 }
-.navbar nav {
+.navbar .container nav {
   display: flex;
   height: auto;
   padding: 0;
   text-align: center;
+  justify-content: flex-end;
 }
-.navbar ul {
+.navbar .container nav ul {
   display: flex;
   list-style-type: none;
   padding: 0;
   justify-content: center;
-  margin: 1.2em 10em 0 0;
 }
-.navbar a {
+.navbar .container nav ul a {
   color: white;
   text-decoration: none;
   padding: 0.1em 1.5em;
 }
-.navbar .current {
+.navbar .container nav ul .current {
   font-weight: bold;
   text-decoration: underline;
 }
-.navbar .container {
+.navbar .container .logo {
   display: flex;
-  place-content: space-between;
+  text-decoration: none;
+  font-size: 2em;
+  color: white;
+  justify-content: center;
+}
+.navbar .container .odkazy {
+  display: flex;
+  padding: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar .container .odkazy a {
+  text-decoration: none;
+  width: 8%;
+  padding: 0.5em 1em 0 0;
+}
+.navbar .container .odkazy a .linkedIn {
+  width: 100%;
+}
+.navbar .container .odkazy a .gitHub {
+  width: 100%;
 }
 
 span {
