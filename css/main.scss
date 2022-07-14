@@ -17,7 +17,7 @@ body{
     .container {
         display: grid;
        // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 3fr 1fr;
 
         nav {
             display: flex;
@@ -30,7 +30,10 @@ body{
                 display: flex;
                 list-style-type: none;
                 padding: 0;
-                justify-content: center;
+
+                li{
+                    padding: 0 3em 0 3em;
+                }
 
                 a{
                     color:white;
@@ -42,6 +45,42 @@ body{
                     text-decoration: underline;
                 }
             }
+
+            
+
+            ul.pod-menu {
+                display: none;
+                position: absolute;
+                top: 85px;
+                background: black;
+                margin: 0;
+                list-style: none;
+
+                
+                li{
+                    padding: 1em 0 1em 0;
+                    border-bottom: 1px solid #1C1C1C;
+                }
+                
+                a:hover{
+                    color: var(--primary-color);
+                }
+
+            }
+
+            [id=btn1]:checked + ul {
+                display: block;
+            }
+
+            label {
+                color: white;
+                cursor: pointer; 
+            }
+
+            input{
+                display: none;
+            }
+
         }
 
         .logo{
@@ -69,11 +108,11 @@ body{
             padding: .5em 1em 0 0;
 
             .linkedIn {
-                width: 100%;
+                width: 30px;
                 }
 
             .gitHub {
-                    width: 100%;
+                    width: 30px;
                 }
             }
         }
@@ -111,7 +150,7 @@ body{
         align-items: center;
 
         .hero-img{
-            width: 50%;  
+            width: 300px;  
             }
     }
 
@@ -144,7 +183,7 @@ body{
 }
 
 .features{
-    background:black;
+    background: #212121;
     color: white;
     padding: 1em 0 1em 0;
     display: grid;
@@ -171,19 +210,47 @@ body{
     display: flex;
     align-self: center;
     justify-content: center;
-    padding: 0;
+    padding: 2em 0 ;
     margin: auto;
   
 }
 
 .bench {
-    width: 40%;
+    width: 225px;
     cursor: pointer;
+    z-index: 1;
 
     &:hover {
-        transform: scale(0.9) rotate(-5deg);
-        border-radius: 5%;
+        transform: scale(1.1);
      }
+}
+
+.tabor{
+    position: relative;
+    width: 200px;
+    left: 100px;
+    opacity: 50%;
+    cursor: pointer;
+
+    &:hover{
+        z-index: 2;
+        opacity: 100%;
+        transform: scale(1.1);
+    }
+}
+
+.tabor2 {
+    position: relative;
+    width: 200px;
+    opacity: 50%;
+    right: 100px;
+    cursor: pointer;
+
+    &:hover{
+        z-index: 1;
+        opacity: 100%;
+        transform: scale(1.1);
+    }
 }
 
 .contactMe{
@@ -269,15 +336,14 @@ body{
 
 @media only screen and (max-width:1013px) {
 
-    .hero-img{
+    .right-col{
         display: none;
+        .hero-img{
+            display: none;
+        }
     }
 
-    .features{
-        grid-template-columns: 1fr;
-    }
-
-    .bench {
+    .img-gallery {
         display: none;
     }
 
