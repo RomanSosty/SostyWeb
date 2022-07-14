@@ -143,20 +143,22 @@ body{
 }
 
 .features{
+    background:black;
     color: white;
-    padding: 2em 0 0 7em;
+    padding: 1em 0 1em 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
 
     .container {
      display: flex;
      flex-direction: column;
+     justify-content: center;
     }
 
     .subfeatures{
-        padding: 4em 3em 0 0;
         font-size: 1.1em;
+        margin-left: 6em;
+
     }
 
     .feature-list{
@@ -168,7 +170,8 @@ body{
     display: flex;
     align-self: center;
     justify-content: center;
-    padding: 6em 0 0 0;
+    padding: 0;
+    margin: auto;
   
 }
 
@@ -177,7 +180,7 @@ body{
     cursor: pointer;
 
     &:hover {
-        transform: scale(0.8) rotate(-15deg);
+        transform: scale(0.9) rotate(-5deg);
         border-radius: 5%;
      }
 }
@@ -229,7 +232,36 @@ body{
         }
 
         .contact-right{
-            padding: 3em 3em 3em 0;
+            padding: 0 3em 3em 0;
+            
+            .podpis{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 3em;
+
+                h2{
+                    margin: 1em 0 0 0;
+                }
+
+                h3{
+                    margin: 0;
+                    padding: 0;
+                    color: var(--primary-color);
+                }
+            }
+
+            p{
+                color: white;
+                margin: 0;
+                span{
+                    color: var(--primary-color);
+                }
+            }
+
+            iframe{
+                margin-top: .5em;
+                height: 50%;
+            }
         }
     }
 }
@@ -251,22 +283,6 @@ body{
     iframe{
         display: none;
     }
-}
-
-@media only screen and (max-width:1520px) {
-
-    h1{
-        font-size: 2em;
-    }
-
-    .subhead {
-        font-size: 1em;
-    }
-
-    .subfeatures{
-        font-size: 1em;
-    }
-
 }
 
 

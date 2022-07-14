@@ -122,18 +122,20 @@ body {
 }
 
 .features {
+  background: black;
   color: white;
-  padding: 2em 0 0 7em;
+  padding: 1em 0 1em 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .features .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .features .subfeatures {
-  padding: 4em 3em 0 0;
   font-size: 1.1em;
+  margin-left: 6em;
 }
 .features .feature-list {
   padding-left: 10em;
@@ -143,7 +145,8 @@ body {
   display: flex;
   align-self: center;
   justify-content: center;
-  padding: 6em 0 0 0;
+  padding: 0;
+  margin: auto;
 }
 
 .bench {
@@ -151,7 +154,7 @@ body {
   cursor: pointer;
 }
 .bench:hover {
-  transform: scale(0.8) rotate(-15deg);
+  transform: scale(0.9) rotate(-5deg);
   border-radius: 5%;
 }
 
@@ -198,7 +201,31 @@ body {
   color: var(--primary-color);
 }
 .contactMe .container .contact-right {
-  padding: 3em 3em 3em 0;
+  padding: 0 3em 3em 0;
+}
+.contactMe .container .contact-right .podpis {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
+.contactMe .container .contact-right .podpis h2 {
+  margin: 1em 0 0 0;
+}
+.contactMe .container .contact-right .podpis h3 {
+  margin: 0;
+  padding: 0;
+  color: var(--primary-color);
+}
+.contactMe .container .contact-right p {
+  color: white;
+  margin: 0;
+}
+.contactMe .container .contact-right p span {
+  color: var(--primary-color);
+}
+.contactMe .container .contact-right iframe {
+  margin-top: 0.5em;
+  height: 50%;
 }
 
 @media only screen and (max-width: 1013px) {
@@ -213,16 +240,5 @@ body {
   }
   iframe {
     display: none;
-  }
-}
-@media only screen and (max-width: 1520px) {
-  h1 {
-    font-size: 2em;
-  }
-  .subhead {
-    font-size: 1em;
-  }
-  .subfeatures {
-    font-size: 1em;
   }
 }/*# sourceMappingURL=main.css.map */
