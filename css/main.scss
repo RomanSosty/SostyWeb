@@ -32,7 +32,8 @@ body{
                 padding: 0;
 
                 li{
-                    padding: 0 3em 0 3em;
+                    padding: 0;
+                    width: 150px;
                 }
 
                 a{
@@ -50,16 +51,20 @@ body{
 
             ul.pod-menu {
                 display: none;
-                position: absolute;
-                top: 85px;
-                background: black;
+                position: relative;
+                height: 0px;
                 margin: 0;
                 list-style: none;
+                color: white;
+                top: 17px;
+
 
                 
                 li{
-                    padding: 1em 0 1em 0;
+                    padding: 1em 0;
                     border-bottom: 1px solid #1C1C1C;
+                    background: black;
+                    
                 }
                 
                 a:hover{
