@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
   --primary-color: #FF0000;
 }
@@ -6,7 +6,7 @@
 body {
   background: #1C1C1C;
   margin: 0;
-  font-family: "Palanquin";
+  font-family: "Poppins";
 }
 
 .navbar {
@@ -31,7 +31,7 @@ body {
 }
 .navbar .container nav ul li {
   padding: 0;
-  width: 150px;
+  width: 170px;
 }
 .navbar .container nav ul a {
   color: white;
@@ -75,6 +75,7 @@ body {
   font-size: 2em;
   color: white;
   justify-content: center;
+  padding-top: 0.1em;
 }
 .navbar .container .logo span {
   color: var(--primary-color);
@@ -100,7 +101,7 @@ body {
 
 .hero {
   padding: 2em 0 0 0;
-  margin: 0 6em 0 6em;
+  margin: 0 6em 2em 6em;
 }
 .hero .container {
   display: grid;
@@ -223,7 +224,7 @@ body {
   place-content: space-between;
 }
 .contactMe .container .contact-left {
-  width: 100%;
+  width: 50%;
 }
 .contactMe .container h2 {
   color: white;
@@ -233,7 +234,14 @@ body {
   color: white;
 }
 .contactMe .container input, .contactMe .container textarea {
-  width: 70%;
+  width: 100%;
+  border-radius: 0.3em;
+  padding: 0.8em;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+.contactMe .container input, .contactMe .container email {
+  width: 50%;
   border-radius: 0.3em;
   padding: 0.8em;
   border: 1px solid black;
@@ -279,21 +287,62 @@ body {
   color: var(--primary-color);
 }
 .contactMe .container .contact-right iframe {
-  margin-top: 0.5em;
-  height: 50%;
+  margin-top: 1em;
+  margin-right: 3em;
+  height: 150px;
+  width: 85.5%;
+}
+
+.hero-school {
+  color: white;
+  display: block;
+  text-align: center;
+  margin: 10em 0 10em 0;
+}
+.hero-school h1 {
+  font-size: 3em;
+}
+
+.hero-design {
+  color: white;
+  display: block;
+  text-align: center;
+  margin: 10em 0 10em 0;
+}
+.hero-design h1 {
+  font-size: 3em;
+}
+
+.hero-video {
+  color: white;
+  display: block;
+  text-align: center;
+  margin: 10em 0 10em 0;
+}
+.hero-video h1 {
+  font-size: 3em;
+}
+
+.hero-about {
+  color: white;
+  display: block;
+  text-align: center;
+  margin: 10em 0 10em 0;
+}
+.hero-about h1 {
+  font-size: 3em;
 }
 
 @media only screen and (max-width: 1013px) {
-  .right-col {
-    display: none;
+  .contactMe .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  .right-col .hero-img {
-    display: none;
+  .contactMe .container .contact-left {
+    width: 80%;
   }
-  .img-gallery {
-    display: none;
-  }
-  iframe {
-    display: none;
+  .features {
+    display: block;
   }
 }/*# sourceMappingURL=main.css.map */

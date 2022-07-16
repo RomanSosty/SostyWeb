@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root{
     --primary-color: #FF0000;
@@ -7,7 +7,7 @@
 body{
     background:  #1C1C1C;
     margin: 0;
-    font-family: 'Palanquin';
+    font-family: 'Poppins';
 }
 
 .navbar{
@@ -33,7 +33,7 @@ body{
 
                 li{
                     padding: 0;
-                    width: 150px;
+                    width: 170px;
                 }
 
                 a{
@@ -94,6 +94,7 @@ body{
             font-size: 2em;
             color: white;
             justify-content: center;
+            padding-top: .1em;
 
             span{
                 color: var(--primary-color);
@@ -127,7 +128,7 @@ body{
 
 .hero{
     padding: 2em 0 0 0;
-    margin: 0 6em 0 6em;
+    margin: 0 6em 2em 6em;
    
     .container {
         display: grid;
@@ -268,7 +269,8 @@ body{
         place-content: space-between;
 
         .contact-left{
-            width: 100%;
+            width: 50%;
+            
         }
         h2{
             color: white;
@@ -279,7 +281,15 @@ body{
         }
 
         input, textarea{
-            width: 70%;
+            width: 100%;
+            border-radius: .3em;
+            padding: .8em;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+       input, email{
+            width: 50%;
             border-radius: .3em;
             padding: .8em;
             border: 1px solid black;
@@ -332,28 +342,85 @@ body{
             }
 
             iframe{
-                margin-top: .5em;
-                height: 50%;
+                margin-top: 1em;
+                margin-right: 3em;
+                height: 150px;
+                width: 85.5%;
             }
         }
     }
 }
+//stránka pro školní projekty
 
+.hero-school{
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 10em 0 10em 0;
+
+    h1{
+        font-size: 3em;
+    }
+}
+
+//stránka pro design
+
+.hero-design{
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 10em 0 10em 0;
+
+    h1{
+        font-size: 3em;
+    }
+}
+
+//stránka pro video
+
+.hero-video{
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 10em 0 10em 0;
+
+    h1{
+        font-size: 3em;
+    }
+}
+
+//stránka o mě
+
+.hero-about{
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 10em 0 10em 0;
+
+    h1{
+        font-size: 3em;
+    }
+}
+
+//zobrazení pro mobil
 @media only screen and (max-width:1013px) {
 
-    .right-col{
-        display: none;
-        .hero-img{
-            display: none;
+    .contactMe{
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            .contact-left{
+                width: 80%;
+            }
+            
         }
-    }
 
-    .img-gallery {
-        display: none;
     }
-
-    iframe{
-        display: none;
+    .features{
+        display: block;
     }
 }
 
