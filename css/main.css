@@ -337,13 +337,53 @@ body {
 
 .features-about {
   padding: 1em 0 1em 0;
-  display: block;
   color: white;
   text-align: center;
   background: #212121;
 }
+.features-about a {
+  color: var(--primary-color);
+}
 .features-about span {
   color: var(--primary-color);
+}
+.features-about img {
+  position: absolute;
+  width: 800px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.features-about .uvod {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.features-about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 3em 3em;
+}
+.features-about .high_school {
+  margin-right: 2em;
+}
+.features-about .first_job {
+  margin: 2em 0 0 3em;
+}
+.features-about .RON {
+  margin-top: 6em;
+  margin-right: 2em;
+}
+.features-about .OK {
+  margin-top: 3em;
+  margin-left: 3em;
+}
+.features-about .University {
+  margin-top: 5em;
+  margin-right: 2em;
+}
+.features-about .future {
+  margin-top: 4em;
 }
 
 @media only screen and (max-width: 1013px) {
@@ -357,5 +397,8 @@ body {
   }
   .features {
     display: block;
+  }
+  .features-about img {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */

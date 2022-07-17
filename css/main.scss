@@ -406,14 +406,65 @@ body{
 
 .features-about{
     padding: 1em 0 1em 0;
-    display: block;
     color: white;
     text-align: center;
     background: #212121;
 
+    a{
+        color: var(--primary-color);
+    }
+  
+
     span{
         color: var(--primary-color);
     }
+
+    img{
+        position: absolute;
+        width: 800px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+  
+    .uvod{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 3em 3em;
+        
+        
+    }
+    .high_school{
+        margin-right: 2em;
+    }
+
+    .first_job{
+        margin: 2em 0 0 3em;
+    }
+    .RON{
+        margin-top: 6em;
+        margin-right: 2em;
+    }
+    .OK{
+        margin-top: 3em;
+        margin-left: 3em;
+    }
+    .University{
+        margin-top: 5em;
+        margin-right: 2em;
+    }
+    .future{
+        margin-top: 4em;
+        
+    }
+    
+
 }
 
 //zobrazení pro mobil
@@ -435,6 +486,12 @@ body{
     }
     .features{
         display: block;
+    }
+
+    .features-about{
+        img{
+            display: none;
+        }
     }
 }
 
