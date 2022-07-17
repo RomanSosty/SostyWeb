@@ -395,10 +395,24 @@ body{
     color: white;
     display: block;
     text-align: center;
-    margin: 10em 0 10em 0;
+    margin: 5em 0 .5em 0;
 
     h1{
         font-size: 3em;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+    }
+}
+
+.features-about{
+    padding: 1em 0 1em 0;
+    display: block;
+    color: white;
+    text-align: center;
+    background: #212121;
+
+    span{
+        color: var(--primary-color);
     }
 }
 
