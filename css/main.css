@@ -397,6 +397,9 @@ body {
   .features-about img {
     display: none;
   }
+  .features-about .container {
+    display: block;
+  }
   .hero .container {
     display: block;
   }
