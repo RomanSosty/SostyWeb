@@ -364,6 +364,9 @@ body {
   max-width: 35%;
   height: auto;
 }
+.features-about .container .img-ja img {
+  max-width: 20%;
+}
 .features-about .high_school {
   margin-right: 2em;
 }
