@@ -127,13 +127,15 @@ body{
 }
 
 .hero{
-    padding: 2em 0 0 0;
-    margin: 0 6em 2em 6em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0 6em;
+    
    
     .container {
-        display: grid;
-       // grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        grid-template-columns: 2fr 1fr;
+       display: flex;
+       justify-content: space-around;
+       padding-top: 2em;
     }
 
     .hi{
@@ -153,7 +155,6 @@ body{
     .right-col{
         display: flex;
         justify-content: center;
-        align-items: center;
 
         .hero-img{
             width: 300px;  
@@ -171,7 +172,7 @@ body{
 
 .hero-cta{
     margin-top: 3em;
-
+    
     .primary-cta{
         background-color: var(--primary-color);
         color: white;
@@ -191,33 +192,25 @@ body{
 .features{
     background: #212121;
     color: white;
-    padding: 1em 0 1em 0;
+    padding: 0 6em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
     .container {
      display: flex;
-     flex-direction: column;
-     justify-content: center;
+     justify-content: space-around;
+     padding-top: 2em;
     }
 
     .subfeatures{
         font-size: 1.1em;
-        margin-left: 6em;
-
-    }
-
-    .feature-list{
-        padding-left: 10em;
-    }
+    } 
 }
 
 .img-gallery{
     display: flex;
-    align-self: center;
     justify-content: center;
     padding: 2em 0 ;
-    margin: auto;
   
 }
 
@@ -261,17 +254,21 @@ body{
 
 .contactMe{
     display: grid;
-    padding: 4em 0 0 7em;
+    padding: 0 6em;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
     .container{
         display: flex;
-        place-content: space-between;
+        padding-top: 2em;
+        justify-content: space-around;
 
         .contact-left{
-            width: 50%;
-            
+            width: 30%; 
+            display: flex;
+            flex-direction: column;  
+            justify-content: center;
         }
+
         h2{
             color: white;
         }
@@ -315,7 +312,6 @@ body{
         }
 
         .contact-right{
-            padding: 0 3em 3em 0;
             
             .podpis{
                 display: flex;
@@ -345,7 +341,7 @@ body{
                 margin-top: 1em;
                 margin-right: 3em;
                 height: 150px;
-                width: 85.5%;
+                width: 100%;
             }
         }
     }
@@ -485,7 +481,9 @@ body{
 
     }
     .features{
+        .container{
         display: block;
+        }
     }
 
     .features-about{
@@ -493,6 +491,13 @@ body{
             display: none;
         }
     }
+
+    .hero{
+        .container{
+            display: block;
+        }
+    }
+
 }
 
 
