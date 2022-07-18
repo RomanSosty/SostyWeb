@@ -343,7 +343,7 @@ body {
 .features-about span {
   color: var(--primary-color);
 }
-.features-about img {
+.features-about .linka {
   position: absolute;
   width: 800px;
   left: 0;
@@ -359,6 +359,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 3em 3em;
+}
+.features-about .container .img-pc img {
+  max-width: 35%;
+  height: auto;
 }
 .features-about .high_school {
   margin-right: 2em;
@@ -399,6 +403,9 @@ body {
   }
   .features-about .container {
     display: block;
+  }
+  .features-about .container img {
+    display: none;
   }
   .hero .container {
     display: block;

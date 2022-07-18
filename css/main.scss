@@ -415,7 +415,7 @@ body{
         color: var(--primary-color);
     }
 
-    img{
+    .linka{
         position: absolute;
         width: 800px;
         left: 0; 
@@ -423,6 +423,7 @@ body{
         margin-left: auto; 
         margin-right: auto; 
     }
+
   
     .uvod{
         display: grid;
@@ -434,6 +435,13 @@ body{
         grid-template-columns: 1fr 1fr;
         margin: 3em 3em;
         
+        .img-pc{
+    
+            img{
+                max-width: 35%;
+                height: auto;
+            }
+        }
         
     }
     .high_school{
@@ -493,6 +501,9 @@ body{
 
         .container{
             display: block;
+            img{
+                display: none;
+            }
         }
     }
 
