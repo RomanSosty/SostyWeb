@@ -3,7 +3,8 @@
     <head>
         <title>sostyWeb</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css?v=<?= time(); ?>">
+
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
          <!-- Global site tag (gtag.js) - Google Analytics -->
          <script async src="https://www.googletagmanager.com/gtag/js?id=G-18S33JQBC9"></script>
@@ -24,7 +25,14 @@
 
                 <nav>
                     <ul class="primary-nav">
-                        <li><a href="index.html" class="current">Home</a></li>
+                        <li>
+                            <label for="btn2" class="button, current">Home</label>
+                            <input type="checkbox" id="btn2">
+                            
+                            <ul class="pod-menu">
+                                <li><a href="/aboutMe.html">About Me</a></li>
+                            </ul>
+                        </li>
                         <li>
                             
                             <label for="btn1" class="button">Work</label>

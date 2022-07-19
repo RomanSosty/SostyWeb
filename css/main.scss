@@ -40,11 +40,17 @@ body{
                     color:white;
                     text-decoration: none;
                     padding: .1em 1.5em;
+
+                    &:hover{
+                        color: var(--primary-color);
+                    }
                 }
                 .current{
                     font-weight: bold;
                     text-decoration: underline;
                 }
+
+                
             }
 
             
@@ -57,6 +63,7 @@ body{
                 list-style: none;
                 color: white;
                 top: 17px;
+                
 
 
                 
@@ -76,10 +83,17 @@ body{
             [id=btn1]:checked + ul {
                 display: block;
             }
+            [id=btn2]:checked + ul {
+                display: block;
+            }
 
             label {
                 color: white;
                 cursor: pointer; 
+
+                &:hover{
+                    color: var(--primary-color);
+                }
             }
 
             input{
@@ -384,7 +398,6 @@ body{
         font-size: 3em;
     }
 }
-
 //stránka o mě
 
 .hero-about{
@@ -417,7 +430,7 @@ body{
 
     .linka{
         position: absolute;
-        width: 800px;
+        width: 900px;
         left: 0; 
         right: 0; 
         margin-left: auto; 
@@ -447,36 +460,67 @@ body{
             img{
                 max-width: 20%;
             }
-        }
+        }  
+
+        .img-my{
+            img{
+                max-width: 25%;
+            }
+        }  
         
-    }
-    .high_school{
-        margin-right: 2em;
+        .img-alex{
+            display: flex;
+            justify-content: center;
+            
+
+            .titulni-alex{
+                max-width: 50%;
+                z-index: 1;
+                cursor: pointer;
+        
+                &:hover {
+                    z-index: 0;
+                 }
+            }
+
+            .ostatni-img{
+                position: absolute;
+                max-width: 23%;
+                opacity: 50%;
+                cursor: pointer;
+               
+                &:hover{
+                    z-index: 1;
+                    opacity: 100%;
+                }
+            }
+        }     
     }
 
-    .first_job{
-        margin: 2em 0 0 3em;
-    }
-    .RON{
-        margin-top: 6em;
-        margin-right: 2em;
-    }
-    .OK{
-        margin-top: 3em;
-        margin-left: 3em;
-    }
-    .University{
-        margin-top: 5em;
-        margin-right: 2em;
-    }
     .future{
         margin-top: 4em;
         
     }
-    
-
 }
 
+@media only screen and (max-width:1730px) {
+
+.features-about{
+    .linka{
+        width: 850px;
+    }
+    }   
+}
+
+@media only screen and (max-width:1690px) {
+
+    .features-about{
+
+        .linka{
+        display: none;
+        }
+    }
+}
 //zobrazení pro mobil
 @media only screen and (max-width:1013px) {
 

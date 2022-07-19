@@ -38,6 +38,9 @@ body {
   text-decoration: none;
   padding: 0.1em 1.5em;
 }
+.navbar .container nav ul a:hover {
+  color: var(--primary-color);
+}
 .navbar .container nav ul .current {
   font-weight: bold;
   text-decoration: underline;
@@ -62,9 +65,15 @@ body {
 .navbar .container nav [id=btn1]:checked + ul {
   display: block;
 }
+.navbar .container nav [id=btn2]:checked + ul {
+  display: block;
+}
 .navbar .container nav label {
   color: white;
   cursor: pointer;
+}
+.navbar .container nav label:hover {
+  color: var(--primary-color);
 }
 .navbar .container nav input {
   display: none;
@@ -345,7 +354,7 @@ body {
 }
 .features-about .linka {
   position: absolute;
-  width: 800px;
+  width: 900px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -367,28 +376,45 @@ body {
 .features-about .container .img-ja img {
   max-width: 20%;
 }
-.features-about .high_school {
-  margin-right: 2em;
+.features-about .container .img-my img {
+  max-width: 25%;
 }
-.features-about .first_job {
-  margin: 2em 0 0 3em;
+.features-about .container .img-alex {
+  display: flex;
+  justify-content: center;
 }
-.features-about .RON {
-  margin-top: 6em;
-  margin-right: 2em;
+.features-about .container .img-alex .titulni-alex {
+  max-width: 50%;
+  z-index: 1;
+  cursor: pointer;
 }
-.features-about .OK {
-  margin-top: 3em;
-  margin-left: 3em;
+.features-about .container .img-alex .titulni-alex:hover {
+  z-index: 0;
 }
-.features-about .University {
-  margin-top: 5em;
-  margin-right: 2em;
+.features-about .container .img-alex .ostatni-img {
+  position: absolute;
+  max-width: 23%;
+  opacity: 50%;
+  cursor: pointer;
+}
+.features-about .container .img-alex .ostatni-img:hover {
+  z-index: 1;
+  opacity: 100%;
 }
 .features-about .future {
   margin-top: 4em;
 }
 
+@media only screen and (max-width: 1730px) {
+  .features-about .linka {
+    width: 850px;
+  }
+}
+@media only screen and (max-width: 1690px) {
+  .features-about .linka {
+    display: none;
+  }
+}
 @media only screen and (max-width: 1013px) {
   .contactMe .container {
     display: flex;
