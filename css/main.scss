@@ -399,15 +399,6 @@ body{
         color: var(--primary-color);
     }
 
-    .linka{
-        position: absolute;
-        width: 900px;
-        left: 0; 
-        right: 0; 
-        margin-left: auto; 
-        margin-right: auto; 
-    }
-
     .uvod{
         display: grid;
         grid-template-columns: 1fr;
@@ -442,6 +433,7 @@ body{
         .img-alex{
             display: flex;
             justify-content: center;
+            
 
             .titulni-alex{
                 max-width: 50%;
@@ -472,26 +464,8 @@ body{
     }
 }
 
-@media only screen and (max-width:1730px) {
-
-.features-about{
-    .linka{
-        width: 850px;
-    }
-    }   
-}
-
-@media only screen and (max-width:1690px) {
-
-    .features-about{
-
-        .linka{
-        display: none;
-        }
-    }
-}
 //zobrazení pro mobil
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:1000px) {
 
     .contactMe{
         grid-template-columns: 1fr;
@@ -511,13 +485,9 @@ body{
 
     .features-about{
 
-        img{
-            display: none;
-        }
-
         .container{
             display: block;
-            
+
             img{
                 display: none;
             }

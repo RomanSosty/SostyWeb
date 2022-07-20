@@ -331,14 +331,6 @@ body {
 .features-about span {
   color: var(--primary-color);
 }
-.features-about .linka {
-  position: absolute;
-  width: 900px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
 .features-about .uvod {
   display: grid;
   grid-template-columns: 1fr;
@@ -384,17 +376,7 @@ body {
   margin-top: 4em;
 }
 
-@media only screen and (max-width: 1730px) {
-  .features-about .linka {
-    width: 850px;
-  }
-}
-@media only screen and (max-width: 1690px) {
-  .features-about .linka {
-    display: none;
-  }
-}
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .contactMe {
     grid-template-columns: 1fr;
   }
@@ -406,9 +388,6 @@ body {
   }
   .features .subfeatures {
     margin: 2vw 14vw;
-  }
-  .features-about img {
-    display: none;
   }
   .features-about .container {
     display: block;
