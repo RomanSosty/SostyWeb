@@ -9,43 +9,44 @@ body {
   font-family: "Poppins";
 }
 
-.navbar {
-  margin-top: 1.5em;
-  background-color: black;
-}
-.navbar .container {
+.grid-container {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1.5fr 1fr 0.5fr;
+  grid-template-rows: 0.1fr 1.5fr 1.5fr 1.5fr;
+  margin-top: 2em;
 }
-.navbar .container nav {
-  display: flex;
-  height: auto;
-  padding: 0;
+
+.navbar {
+  grid-area: 1/1/2/4;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 2fr 0.5fr;
+  place-content: center;
+  justify-items: center;
   text-align: center;
-  justify-content: flex-end;
 }
-.navbar .container nav ul {
+.navbar nav ul {
   display: flex;
   list-style-type: none;
   padding: 0;
 }
-.navbar .container nav ul li {
+.navbar nav ul li {
   padding: 0;
   width: 170px;
 }
-.navbar .container nav ul a {
+.navbar nav ul a {
   color: white;
   text-decoration: none;
   padding: 0.1em 1.5em;
 }
-.navbar .container nav ul a:hover {
+.navbar nav ul a:hover {
   color: var(--primary-color);
 }
-.navbar .container nav ul .current {
+.navbar nav ul .current {
   font-weight: bold;
   text-decoration: underline;
 }
-.navbar .container nav ul.pod-menu {
+.navbar nav ul.pod-menu {
   display: none;
   position: relative;
   height: 0px;
@@ -54,94 +55,82 @@ body {
   color: white;
   top: 17px;
 }
-.navbar .container nav ul.pod-menu li {
+.navbar nav ul.pod-menu li {
   padding: 1em 0;
   border-bottom: 1px solid #1C1C1C;
   background: black;
 }
-.navbar .container nav ul.pod-menu a:hover {
+.navbar nav ul.pod-menu a:hover {
   color: var(--primary-color);
 }
-.navbar .container nav [id=btn1]:checked + ul {
+.navbar nav [id=btn1]:checked + ul {
   display: block;
 }
-.navbar .container nav [id=btn2]:checked + ul {
+.navbar nav [id=btn2]:checked + ul {
   display: block;
 }
-.navbar .container nav label {
+.navbar nav label {
   color: white;
   cursor: pointer;
 }
-.navbar .container nav label:hover {
+.navbar nav label:hover {
   color: var(--primary-color);
 }
-.navbar .container nav input {
+.navbar nav input {
   display: none;
 }
-.navbar .container .logo {
-  display: flex;
+.navbar .logo {
   text-decoration: none;
-  font-size: 2em;
+  font-size: 2rem;
   color: white;
-  justify-content: center;
   padding-top: 0.1em;
 }
-.navbar .container .logo span {
+.navbar .logo span {
   color: var(--primary-color);
 }
-.navbar .container .odkazy {
-  display: flex;
-  padding: 0;
-  text-align: center;
-  align-items: center;
-  justify-content: flex-end;
+.navbar .odkazy {
+  padding-top: 1em;
 }
-.navbar .container .odkazy a {
+.navbar .odkazy a {
   text-decoration: none;
   width: 8%;
   padding: 0.5em 1em 0 0;
 }
-.navbar .container .odkazy a .linkedIn {
+.navbar .odkazy a .linkedIn {
   width: 30px;
 }
-.navbar .container .odkazy a .gitHub {
+.navbar .odkazy a .gitHub {
   width: 30px;
 }
 
 .hero {
+  grid-area: 2/1/3/4;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  padding: 0 6em;
-}
-.hero .container {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 2em;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  justify-items: center;
+  margin: 0 5vw;
 }
 .hero .hi {
   color: white;
   padding: 0;
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 .hero h1 {
   color: white;
   padding: 0;
   margin: 0;
-  font-size: 4em;
+  font-size: 4rem;
 }
-.hero .right-col {
-  display: flex;
-  justify-content: center;
-}
-.hero .right-col .hero-img {
+.hero .hero-img {
   width: 300px;
 }
 .hero .subhead {
   padding: 0;
   margin: 0;
   color: white;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 .hero-cta {
@@ -164,101 +153,84 @@ body {
 .features {
   background: #212121;
   color: white;
-  padding: 0 6em;
+  grid-area: 3/1/4/4;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  justify-items: center;
+  margin: 0 5vw;
 }
-.features .container {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 2em;
-}
-.features .subfeatures {
-  font-size: 1.1em;
+
+.subfeatures {
+  font-size: 1.1rem;
 }
 
 .img-gallery {
   display: flex;
-  justify-content: center;
-  padding: 2em 0;
 }
-
-.bench {
+.img-gallery .bench {
   width: 225px;
   cursor: pointer;
   z-index: 1;
 }
-.bench:hover {
+.img-gallery .bench:hover {
   transform: scale(1.1);
 }
-
-.tabor {
+.img-gallery .tabor {
   position: relative;
   width: 200px;
   left: 100px;
   opacity: 50%;
   cursor: pointer;
 }
-.tabor:hover {
+.img-gallery .tabor:hover {
   z-index: 2;
   opacity: 100%;
   transform: scale(1.1);
 }
-
-.tabor2 {
+.img-gallery .tabor2 {
   position: relative;
   width: 200px;
   opacity: 50%;
   right: 100px;
   cursor: pointer;
 }
-.tabor2:hover {
+.img-gallery .tabor2:hover {
   z-index: 1;
   opacity: 100%;
   transform: scale(1.1);
 }
 
 .contactMe {
+  grid-area: 4/1/5/4;
   display: grid;
-  padding: 0 6em;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-.contactMe .container {
-  display: flex;
-  padding-top: 2em;
-  justify-content: space-around;
-}
-.contactMe .container .contact-left {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.contactMe .container h2 {
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  margin: 0 5vw;
   color: white;
 }
-.contactMe .container label {
+.contactMe .contact-left {
+  width: 80%;
+}
+.contactMe label {
   display: block;
-  color: white;
 }
-.contactMe .container input, .contactMe .container textarea {
+.contactMe input, .contactMe textarea {
   width: 100%;
   border-radius: 0.3em;
   padding: 0.8em;
-  border: 1px solid black;
   box-sizing: border-box;
 }
-.contactMe .container input, .contactMe .container email {
+.contactMe input, .contactMe email {
   width: 50%;
   border-radius: 0.3em;
   padding: 0.8em;
-  border: 1px solid black;
   box-sizing: border-box;
 }
-.contactMe .container input[type=submit] {
+.contactMe input[type=submit] {
   background-color: var(--primary-color);
   color: white;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: bold;
   border: none;
   border-radius: 5em;
@@ -267,31 +239,29 @@ body {
   display: flex;
   width: unset;
 }
-.contactMe .container input[type=submit]:hover {
+.contactMe input[type=submit]:hover {
   background-color: white;
   color: var(--primary-color);
 }
-.contactMe .container .contact-right .podpis {
-  display: flex;
-  flex-direction: column;
+.contactMe .contact-right .podpis {
   margin-bottom: 3em;
 }
-.contactMe .container .contact-right .podpis h2 {
+.contactMe .contact-right .podpis h2 {
   margin: 1em 0 0 0;
 }
-.contactMe .container .contact-right .podpis h3 {
+.contactMe .contact-right .podpis h3 {
   margin: 0;
   padding: 0;
   color: var(--primary-color);
 }
-.contactMe .container .contact-right p {
+.contactMe .contact-right p {
   color: white;
   margin: 0;
 }
-.contactMe .container .contact-right p span {
+.contactMe .contact-right p span {
   color: var(--primary-color);
 }
-.contactMe .container .contact-right iframe {
+.contactMe .contact-right iframe {
   margin-top: 1em;
   margin-right: 3em;
   height: 150px;
@@ -299,8 +269,8 @@ body {
 }
 
 .hero-school {
+  grid-area: 2/1/3/4;
   color: white;
-  display: block;
   text-align: center;
   margin: 10em 0 10em 0;
 }
@@ -309,42 +279,51 @@ body {
 }
 
 .hero-design {
+  grid-area: 2/1/3/4;
   color: white;
-  display: block;
   text-align: center;
   margin: 10em 0 10em 0;
 }
 .hero-design h1 {
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 .hero-video {
   color: white;
-  display: block;
+  grid-area: 2/1/3/4;
   text-align: center;
   margin: 10em 0 10em 0;
 }
 .hero-video h1 {
-  font-size: 3em;
+  font-size: 3rem;
+}
+
+.grid-container-about {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 0.5fr;
+  grid-template-rows: 0.1fr 0.3fr 2fr 0.5fr;
+  margin-top: 2em;
 }
 
 .hero-about {
+  grid-area: 2/1/3/4;
   color: white;
-  display: block;
   text-align: center;
-  margin: 5em 0 0.5em 0;
+  margin: 0 5vw;
 }
 .hero-about h1 {
-  font-size: 3em;
+  font-size: 3rem;
   text-decoration: underline;
   text-underline-offset: 10px;
 }
 
 .features-about {
+  grid-area: 3/1/4/4;
   padding: 1em 0 1em 0;
   color: white;
   text-align: center;
   background: #212121;
+  margin: 0 5vw;
 }
 .features-about a {
   color: var(--primary-color);
@@ -393,7 +372,7 @@ body {
 }
 .features-about .container .img-alex .ostatni-img {
   position: absolute;
-  max-width: 23%;
+  max-width: 20%;
   opacity: 50%;
   cursor: pointer;
 }
@@ -415,17 +394,18 @@ body {
     display: none;
   }
 }
-@media only screen and (max-width: 1013px) {
-  .contactMe .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+@media only screen and (max-width: 900px) {
+  .contactMe {
+    grid-template-columns: 1fr;
   }
-  .contactMe .container .contact-left {
+  .contactMe .contact-left {
     width: 80%;
   }
-  .features .container {
-    display: block;
+  .features {
+    grid-template-columns: 1fr;
+  }
+  .features .subfeatures {
+    margin: 2vw 14vw;
   }
   .features-about img {
     display: none;
@@ -436,7 +416,7 @@ body {
   .features-about .container img {
     display: none;
   }
-  .hero .container {
-    display: block;
+  .hero {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -18,124 +18,129 @@
     </head>
 
     <body>
-        <div class="navbar">
-            <div class="container">
+        <div class="grid-container">
 
-                <a class="logo" href="index.html">sosty<span>Web</span></a>
+                <div class="navbar">
 
-                <nav>
-                    <ul class="primary-nav">
-                        <li>
-                            <label for="btn2" class="button, current">Home</label>
-                            <input type="checkbox" id="btn2">
-                            
-                            <ul class="pod-menu">
-                                <li><a href="/aboutMe.html">About Me</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            
-                            <label for="btn1" class="button">Work</label>
-                            <input type="checkbox" id="btn1">
+                    <a class="logo" href="index.html">sosty<span>Web</span></a>
 
-                            <ul class="pod-menu">
-                                <li><a href="/school.html">School Project</a></li>
-                                <li><a href="/design.html">Design</a></li>
-                                <li><a href="/video.html">Video</a></li> 
-                            </ul>
-                        </li>
+                    <nav>
+                        <ul class="primary-nav">
+                            <li>
+                                <label for="btn2" class="button, current">Home</label>
+                                <input type="checkbox" id="btn2">
+                                
+                                <ul class="pod-menu">
+                                    <li><a href="/aboutMe.html">About Me</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                
+                                <label for="btn1" class="button">Work</label>
+                                <input type="checkbox" id="btn1">
 
-                        <li><a href="#bottom">Contanct</a></li>
-                    </ul>
-                </nav>
-                <div class="odkazy">
-                <a href="https://www.linkedin.com/in/roman-šostok-7559241b6/">
-                <img src="img/38669.png" alt="LinkedIn" class="linkedIn">
-                </a>
+                                <ul class="pod-menu">
+                                    <li><a href="/school.html">School Project</a></li>
+                                    <li><a href="/design.html">Design</a></li>
+                                    <li><a href="/video.html">Video</a></li> 
+                                </ul>
+                            </li>
 
-                <a href="https://github.com/RomanSosty">
-                <img src="img/38401.png" alt="GitHub" class="gitHub">
-                </a>
-                </div>
+                            <li><a href="#bottom">Contanct</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="odkazy">
+                        <a href="https://www.linkedin.com/in/roman-šostok-7559241b6/">
+                        <img src="img/38669.png" alt="LinkedIn" class="linkedIn">
+                        </a>
+
+                        <a href="https://github.com/RomanSosty">
+                        <img src="img/38401.png" alt="GitHub" class="gitHub">
+                        </a>
+                    </div>
             </div>
-        </div>
         
-        <section class="hero">
-            <div class="container">
-                <div class="lef-col">
-                    <p class="hi">Hi I am</p>
+                <section class="hero">
 
-                    <h1>Roman Šostok</h1>
+                        <div class="lef-col">
+                            <p class="hi">Hi I am</p>
 
-                    <p class="subhead">Consultant for the attendance system with more than 6 years <br>
-                         of experiecnce. I'm currently focusing on programming and ...</p>
+                            <h1>Roman Šostok</h1>
 
-                    <div class="hero-cta">
-                        <a href="/aboutMe.html" class="primary-cta">More info</a>
-                    </div>
-                </div>
-                <div class="right-col">
-                <img src="img/Profile.png" alt="profile_pic" class="hero-img">
-                </div>
-            </div>
-        </section>
+                            <p class="subhead">Consultant for the attendance system with more than 6 years <br>
+                                of experiecnce. I'm currently focusing on programming and ...</p>
 
-        <section class="features">
-            <div class="container">
-                <div class="img-gallery">
-                    <img src="img/IMG_0089.jpeg" alt="tabor" class="tabor">
-                    <img src="img/bench.jpg" alt="bench" class="bench">
-                    <img src="img/IMG_0095.jpeg" alt="tabor2" class="tabor2">
-                </div>
+                            <div class="hero-cta">
+                                <a href="/aboutMe.html" class="primary-cta">More info</a>
+                            </div>
+                        </div>
+
+                        <div class="right-col">
+                        <img src="img/Profile.png" alt="profile_pic" class="hero-img">
+                        </div>
+
+                </section>
+
+                <section class="features">
+                    
+                        <div class="img-gallery">
+                            <img src="img/IMG_0089.jpeg" alt="tabor" class="tabor">
+                            <img src="img/bench.jpg" alt="bench" class="bench">
+                            <img src="img/IMG_0095.jpeg" alt="tabor2" class="tabor2">
+                        </div>
+
+                        <div class="subfeatures">
+                            <p>I am studying VŠB (University) majoring in computer sience.<br> I have knowledge in:</p>
+                            <ul class="feature-list">
+                                <li>C</li>
+                                <li>C++</li>
+                                <li>C#</li>
+                                <li>CSS</li>
+                                <li>HTML</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+                             
+                </section>
+
+                <section class="contactMe">
+                
+                        <div class="contact-left">
+                            <h2 name="bottom" id="bottom">Contact Me</h2>
+
+                            <form onsubmit="sendEmail(); reset(); return false;">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id ="name">
+
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id ="email">
+
+                                <label for="message">Message</label>
+                                <textarea type="message"  id ="message" cols="30" rows="10"></textarea>
+
+                                <input type="submit" name="submit" class="primary-cta" value="Submit">
+                            </form>
+                        </div>
+                    
+                        <div class="contact-right">
+                            <div class="podpis">
+                            <h2>Šostok Roman</h2>
+                            <h3>programmer</h3>
+                            </div>
+
+                            <p><span>Address:</span> Dětmarovice 1488, 735 71</p>
+                            <p><span>Phone:</span> +420 734 525 202</p>
+                            <p><span>Email:</span> romansostok@gmail.com</p>
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41124.74095667384!2d18.432834991620958!3d49.89324012689705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471155d80185d7c1%3A0x400af0f6614f020!2s735%2071%20D%C4%9Btmarovice!5e0!3m2!1scs!2scz!4v1657741425650!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                
+                </section>  
+
+        </div>
 
 
-                <div class="subfeatures">
-                    <p>I am studying VŠB (University) majoring in computer sience.<br> I have knowledge in:</p>
-                    <ul class="feature-list">
-                        <li>C</li>
-                        <li>C++</li>
-                        <li>C#</li>
-                        <li>CSS</li>
-                        <li>HTML</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-            </div>           
-        </section>
-
-        <section class="contactMe">
-            <div class="container">
-                <div class="contact-left">
-                    <h2 name="bottom" id="bottom">Contact Me</h2>
-
-                    <form onsubmit="sendEmail(); reset(); return false;">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id ="name">
-
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id ="email">
-
-                        <label for="message">Message</label>
-                        <textarea type="message"  id ="message" cols="30" rows="10"></textarea>
-
-                        <input type="submit" name="submit" class="primary-cta" value="Submit">
-                    </form>
-                </div>
-            
-                <div class="contact-right">
-                    <div class="podpis">
-                    <h2>Šostok Roman</h2>
-                    <h3>programmer</h3>
-                    </div>
-
-                    <p><span>Address:</span> Dětmarovice 1488, 735 71</p>
-                    <p><span>Phone:</span> +420 734 525 202</p>
-                    <p><span>Email:</span> romansostok@gmail.com</p>
-
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41124.74095667384!2d18.432834991620958!3d49.89324012689705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471155d80185d7c1%3A0x400af0f6614f020!2s735%2071%20D%C4%9Btmarovice!5e0!3m2!1scs!2scz!4v1657741425650!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </section>  
         <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script>
             function sendEmail()
@@ -156,7 +161,6 @@
             }
 
         </script>
-
        
     </body>
 </html>
