@@ -281,7 +281,7 @@ body {
   margin: 10em 0 10em 0;
 }
 .hero-school h1 {
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 .hero-design {
@@ -383,10 +383,19 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+  }
+  .grid-container-about {
+    margin: 0;
+  }
   .navbar {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
     align-items: center;
+    justify-items: end;
+    padding: 2em 0;
   }
   .navbar nav {
     display: none;
@@ -403,29 +412,23 @@ body {
     display: block;
     margin-top: 7vw;
   }
+  .navbar nav ul .current {
+    font-weight: normal;
+    text-decoration: none;
+    color: var(--primary-color);
+  }
   .navbar nav ul li {
     width: auto;
   }
   .navbar nav ul li label {
-    color: white;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    font-size: 1.3rem;
-    padding-top: 3em;
-    border-bottom: 3px solid black;
-  }
-  .navbar nav ul li label:hover {
-    font-weight: bold;
+    display: none;
   }
   .navbar nav ul li a {
     color: white;
     text-decoration: none;
     display: block;
-    font-size: 1.3rem;
-    text-align: center;
-    border-bottom: 3px solid black;
-    padding-top: 3em;
+    font-size: 1.5rem;
+    text-align: right;
   }
   .navbar nav ul li a:hover {
     font-weight: bold;
@@ -435,19 +438,19 @@ body {
     position: static;
     height: auto;
   }
-  .navbar nav ul.pod-menu .current {
-    font-weight: normal;
-    text-decoration: none;
-  }
   .navbar nav ul.pod-menu li {
     background: #212121;
     border: none;
   }
   .navbar nav ul.pod-menu li a {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: normal;
-    padding: 0;
+    margin: 0;
     border-bottom: none;
+    background: none;
+  }
+  .navbar nav ul.pod-menu li a:hover {
+    font-weight: bold;
   }
   .navbar nav .mobile-menu-exit {
     display: flex;
@@ -462,6 +465,7 @@ body {
     display: block;
     padding-right: 4vw;
     cursor: pointer;
+    width: 9%;
   }
   .navbar .logo {
     padding-left: 4vw;
