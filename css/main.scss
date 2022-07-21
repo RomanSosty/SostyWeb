@@ -524,7 +524,7 @@ body{
                         color: white;
                         text-decoration: none;
                         display: block;
-                        font-size: 1.5em;
+                        font-size: 3em;
                         text-align: right;
             
                         &:hover {
@@ -541,7 +541,7 @@ body{
 
                 li{
                     a{
-                        font-size: 1.5em;
+                        font-size: 3em;
                         font-weight: normal;
                         margin: 0;
                         border-bottom: none;
@@ -577,7 +577,7 @@ body{
         }
 
         .logo{
-            font-size: 3em;
+            font-size: 3.5em;
             padding-left: 1em;
             
         }
@@ -598,14 +598,24 @@ body{
 
     .features{
         grid-template-columns: 1fr;
+        padding-top: 2em;
         
         .subfeatures{
-            margin: 2vw 14vw
+            margin: 2vw 7vw
+        }
+    }
+
+    .hero-about{
+        font-size: 2em;
+
+        h1{
+            font-size: 3em;
         }
     }
 
     .features-about{
-
+        font-size: 2em;
+        
         .container{
             display: block;
 
@@ -617,8 +627,26 @@ body{
 
     .hero{
         grid-template-columns: 1fr;
+
+        .hi{
+            font-size: 2em;
+        }
+        h1{
+            font-size: 5em;
+        }
+
+        .subhead{
+            font-size: 2em;
+        }
+
+        .primary-cta{
+            font-size: 1.5em;
+        }
     }
 
+    .subfeatures{
+        font-size: 2em;
+    } 
 }
 
 
