@@ -450,6 +450,7 @@ body {
     border-bottom: none;
   }
   .navbar nav .mobile-menu-exit {
+    display: flex;
     float: right;
     margin: 0.5em;
     cursor: pointer;
