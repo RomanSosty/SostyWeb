@@ -427,7 +427,7 @@ body {
     color: white;
     text-decoration: none;
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     text-align: right;
   }
   .navbar nav ul li a:hover {
@@ -443,7 +443,7 @@ body {
     border: none;
   }
   .navbar nav ul.pod-menu li a {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: normal;
     margin: 0;
     border-bottom: none;
@@ -468,7 +468,8 @@ body {
     width: 9%;
   }
   .navbar .logo {
-    padding-left: 4vw;
+    font-size: 3em;
+    padding-left: 1em;
   }
   nav.menu-btn {
     display: block;
