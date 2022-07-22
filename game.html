@@ -34,12 +34,12 @@
 
                                 <ul class="pod-menu">
                                     <li><a href="/school.html" >School Project</a></li>
-                                    <li><a href="/design.html" class="current">Design</a></li>
+                                    <li><a href="/game.html" class="current">Game</a></li>
                                     <li><a href="/video.html">Video</a></li> 
                                 </ul>
                             </li>
 
-                            <li><a href="#bottom">Contanct</a></li>
+                            <li><a href="#bottom">Contact</a></li>
                         </ul>
                     </nav>
                     <div class="odkazy">
@@ -54,14 +54,27 @@
                 
             </div>
         
-        <section class="hero-design">
+        <section class="hero-game">
             
                 <h1>Working on it</h1>
                 <h2>the page will be ready soon</h2> 
            
         </section>
 
-        <section class="features">
+        <section class="features-game">
+            <h1>Rock, Paper, Scissors</h1>
+
+            <div class="choice">
+                <h2>Computer Choice: <span id="computer-choice"></span></h2>
+                <h2>Your Choice: <span id="user-choice"></span></h2>
+            </div>
+                <h2>Result: <span id="result"></span></h2>
+            
+            <div class="button-choice">
+                <button id="rock">Rock</button>
+                <button id="paper">Paper</button>
+                <button id="scissors">Scissors</button>
+            </div>  
         </section>
 
         <section class="contactMe">
@@ -98,6 +111,7 @@
 
     </div>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="script/app.js" charset="utf-8"></script>
         <script>
             function sendEmail()
             {
@@ -127,7 +141,6 @@
             mobileBtnExit.addEventListener('click',() => {
                 nav.classList.remove('menu-btn');
             })
-
         </script>
     </body>
 </html>
