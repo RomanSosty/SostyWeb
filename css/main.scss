@@ -354,9 +354,39 @@ body{
             padding: 4vw;
         }
         .maze{
-            
             margin: 3vw;
         }
+}
+
+.features-school{
+    grid-area: 3 / 1 / 4 /4;
+    color: white;
+    margin: 0 5vw;
+    grid-template-columns: 1fr 1.5fr;
+    display: grid;
+    background: #212121;
+
+    h1{
+        font-size: 3rem;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+    }
+    .gitHub{
+        width: 10%;
+        cursor: pointer;
+    }
+    .block-popis{
+        padding: 4vw;
+    }
+    .block{
+        height: 700px;
+        margin: 3vw;
+    }
+    .block2{
+        height: 700px;
+        margin: 3vw;
+        display: none;
+    }
 }
 
 //stránka pro hry
@@ -708,7 +738,18 @@ body{
     } 
 
     .hero-school{
-        grid-template-columns: 1fr;
+        display: block;
+    }
+
+    .features-school{
+        display: block;
+        
+        .block{
+            display: none;
+        }
+        .block2{
+            display: block;
+        }
     }
 }
 
