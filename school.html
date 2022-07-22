@@ -3,14 +3,14 @@
     <head>
         <title>sostyWeb</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/main.css?v=<?= time(); ?>">
+        <link rel="stylesheet" href="css/main.css">
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <div class="grid-container">
+            
             <div class="navbar">
-
                     <a class="logo" href="index.html">sosty<span>Web</span></a>
                     <img id="mobile-cta" class="mobile-menu" src="img/menu.png"> 
 
@@ -28,7 +28,6 @@
                             </li>
                            
                             <li>
-                                
                                 <label for="btn1" class="button, current">Work</label>
                                 <input type="checkbox" id="btn1">
 
@@ -42,22 +41,36 @@
                             <li><a href="#bottom">Contact</a></li>
                         </ul>
                     </nav>
-                    <div class="odkazy">
-                    <a href="https://www.linkedin.com/in/roman-šostok-7559241b6/">
-                    <img src="img/38669.png" alt="LinkedIn" class="linkedIn">
-                    </a>
 
-                    <a href="https://github.com/RomanSosty">
-                    <img src="img/38401.png" alt="GitHub" class="gitHub">
-                    </a>
+                    <div class="odkazy">
+                        <a href="https://www.linkedin.com/in/roman-šostok-7559241b6/">
+                        <img src="img/38669.png" alt="LinkedIn" class="linkedIn">
+                        </a>
+
+                        <a href="https://github.com/RomanSosty">
+                        <img src="img/38401.png" alt="GitHub" class="gitHub">
+                        </a>
                     </div>
             </div>
         
         <section class="hero-school">
+
+                <div class="maze-popis">
+                    <h1>Maze Generator</h1>
+                    <h2>Depth-first search</h2>
+
+                    <p>The program demonstrates the use of the algorithm Depth-first search with OOP. I used C++ language. 
+                        At the beginning, the program creates a list of cubes. The cubes are then spread out to show squared paper. The image is in SVG format.
+                        In the next step, the algorithm starts going through individual cubes in a random direction. Depending on which direction he goes, the border of the cubes will be destroyed. 
+                        A maze will be created.
+                    </p>
+                    <a href="https://github.com/RomanSosty/Maze-Generator-SVG-C.git">
+                    <img src="img/38401.png" alt="GitHub" class="gitHub">
+                    </a>
+                </div>
+
+                <img src="img/obrazek.png" alt="maze" class="maze">
             
-                <h1>Working on it</h1>
-                <h2>the page will be ready soon</h2> 
-           
         </section>
 
         <section class="features">
@@ -96,7 +109,7 @@
                 </div>
            
         </section>  
-    </div>
+        </div>
 
         <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script>
