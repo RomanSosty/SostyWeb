@@ -1,133 +1,137 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>sostyWeb</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/main.css?v=<?= time(); ?>">
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    </head>
 
-    <body>
-        <div class="grid-container">
-            <div class="navbar">
-                    <a class="logo" href="index.html">sosty<span>Web</span></a>
-                    <img id="mobile-cta" class="mobile-menu" src="img/menu.png"> 
+<head>
+    <title>sostyWeb</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css?v=<?= time(); ?>">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
 
-                    <nav>
-                        <img id="mobile-exit" class="mobile-menu-exit" src="img/exit.svg" alt="Close Navigation">
-                        <ul class="primary-nav">
-                            <li>
-                                <label for="btn2" class="button">Home</label>
-                                <input type="checkbox" id="btn2">
-                                
-                                <ul class="pod-menu">
-                                    <li><a href="/index.html">Home</a></li>
-                                    <li><a href="/aboutMe.html">About Me</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                
-                                <label for="btn1" class="button, current">Work</label>
-                                <input type="checkbox" id="btn1">
+<body>
+    <div class="grid-container">
+        <div class="navbar">
+            <a class="logo" href="index.html">sosty<span>Web</span></a>
+            <img id="mobile-cta" class="mobile-menu" src="img/menu.png">
 
-                                <ul class="pod-menu">
-                                    <li><a href="/school.html" >School Project</a></li>
-                                    <li><a href="/game.html" >Game</a></li>
-                                    <li><a href="/video.html" class="current">Video</a></li> 
-                                </ul>
-                            </li>
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="img/exit.svg" alt="Close Navigation">
+                <ul class="primary-nav">
+                    <li>
+                        <label for="btn2" class="button">Home</label>
+                        <input type="checkbox" id="btn2">
 
-                            <li><a href="#bottom">Contact</a></li>
+                        <ul class="pod-menu">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/aboutMe.html">About Me</a></li>
                         </ul>
-                    </nav>
+                    </li>
+                    <li>
 
-                        <div class="odkazy">
-                            <a href="https://www.linkedin.com/in/roman-šostok-7559241b6/">
-                            <img src="img/38669.png" alt="LinkedIn" class="linkedIn">
-                            </a>
+                        <label for="btn1" class="button, current">Work</label>
+                        <input type="checkbox" id="btn1">
 
-                            <a href="https://github.com/RomanSosty">
-                            <img src="img/38401.png" alt="GitHub" class="gitHub">
-                            </a>
-                        </div>
+                        <ul class="pod-menu">
+                            <li><a href="/school.html">School Project</a></li>
+                            <li><a href="/game.html">Game</a></li>
+                            <li><a href="/video.html" class="current">Video</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#bottom">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="odkazy">
+                <a href="https://www.linkedin.com/in/roman-šostok-7559241b6/">
+                    <img src="img/38669.png" alt="LinkedIn" class="linkedIn">
+                </a>
+
+                <a href="https://github.com/RomanSosty">
+                    <img src="img/38401.png" alt="GitHub" class="gitHub">
+                </a>
             </div>
-            
+        </div>
+
         <section class="hero-video">
-            
-                <h1>Working on it</h1>
-                <h2>the page will be ready soon</h2> 
-           
+
+            <h1>Working on it</h1>
+            <h2>the page will be ready soon</h2>
+
         </section>
 
         <section class="features">
         </section>
 
         <section class="contactMe">
-                <div class="contact-left">
-                    <h2 name="bottom" id="bottom">Contact Me</h2>
+            <div class="contact-left">
+                <h2 name="bottom" id="bottom">Contact Me</h2>
 
-                    <form onsubmit="sendEmail(); reset(); return false;">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id ="name">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
 
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id ="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
 
-                        <label for="message">Message</label>
-                        <textarea type="message"  id ="message" cols="30" rows="10"></textarea>
+                    <label for="message">Message</label>
+                    <textarea type="message" id="message" cols="30" rows="10"></textarea>
 
-                        <input type="submit" name="submit" class="primary-cta" value="Submit">
-                    </form>
-                </div>
-            
-                <div class="contact-right">
-                    <div class="podpis">
+                    <input type="submit" name="submit" class="primary-cta" value="Submit">
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <div class="podpis">
                     <h2>Šostok Roman</h2>
                     <h3>programmer</h3>
-                    </div>
-
-                    <p><span>Address:</span> Dětmarovice 1488, 735 71</p>
-                    <p><span>Phone:</span> +420 734 525 202</p>
-                    <p><span>Email:</span> romansostok@gmail.com</p>
-
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41124.74095667384!2d18.432834991620958!3d49.89324012689705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471155d80185d7c1%3A0x400af0f6614f020!2s735%2071%20D%C4%9Btmarovice!5e0!3m2!1scs!2scz!4v1657741425650!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
-        </section>  
+                <p><span>Address:</span> Dětmarovice 1488, 735 71</p>
+                <p><span>Phone:</span> +420 734 525 202</p>
+                <p><span>Email:</span> romansostok@gmail.com</p>
 
-        </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41124.74095667384!2d18.432834991620958!3d49.89324012689705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471155d80185d7c1%3A0x400af0f6614f020!2s735%2071%20D%C4%9Btmarovice!5e0!3m2!1scs!2scz!4v1657741425650!5m2!1scs!2scz"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script>
-            function sendEmail()
-            {
+        </section>
+
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
             Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "romansostok@gmail.com",
-                Password : "3A313BA18C020E30FC06CFEB51C9EC349E87",
-                To : 'romansostok@gmail.com',
-                From : 'romansostok@gmail.com',
-                Subject : "This is the subject",
-                Body : "Name: " + document.getElementById("name").value 
+                Host: "smtp.elasticemail.com",
+                Username: "romansostok@gmail.com",
+                Password: "3A313BA18C020E30FC06CFEB51C9EC349E87",
+                To: 'romansostok@gmail.com',
+                From: 'romansostok@gmail.com',
+                Subject: "This is the subject",
+                Body: "Name: " + document.getElementById("name").value
                     + " <br> Email: " + document.getElementById("email").value
                     + " <br> Message: " + document.getElementById("message").value
             }).then(
-            message => alert("Send email")
+                message => alert("Send email")
             );
-            }
+        }
 
-            const mobileBtn = document.getElementById('mobile-cta')
-            nav = document.querySelector('nav')
-            mobileBtnExit = document.getElementById('mobile-exit');
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
 
-            mobileBtn.addEventListener('click',() => {
-                nav.classList.add('menu-btn');
-            })
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
 
-            mobileBtnExit.addEventListener('click',() => {
-                nav.classList.remove('menu-btn');
-            })
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
 
-        </script>
-    </body>
+    </script>
+</body>
+
 </html>

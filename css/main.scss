@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-:root{
+:root {
     --primary-color: #FF0000;
 }
 
-body{
-    background:  #1C1C1C;
+body {
+    background: #1C1C1C;
     margin: 0;
     font-family: 'Poppins';
 }
 
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-columns: 1.5fr 1fr .5fr;
     grid-template-rows: .1fr 1.5fr 1.5fr 1.5fr;
@@ -18,7 +18,7 @@ body{
 }
 
 //navigační menu
-.navbar{
+.navbar {
     grid-area: 1 / 1 / 2 /4;
     background-color: black;
     display: grid;
@@ -27,40 +27,39 @@ body{
     justify-items: center;
     text-align: center;
 
-    .mobile-menu
-    {
+    .mobile-menu {
         display: none;
     }
 
-    .mobile-menu-exit{
+    .mobile-menu-exit {
         display: none;
     }
 
     nav {
-        ul{
+        ul {
             display: flex;
             list-style-type: none;
             padding: 0;
 
-            li{
+            li {
                 padding: 0;
                 width: 170px;
             }
 
-            a{
-                color:white;
+            a {
+                color: white;
                 text-decoration: none;
                 padding: .1em 1.5em;
 
-                &:hover{
+                &:hover {
                     color: var(--primary-color);
-                    }
+                }
             }
 
-            .current{
+            .current {
                 font-weight: bold;
                 text-decoration: underline;
-            }   
+            }
         }
 
         ul.pod-menu {
@@ -71,57 +70,57 @@ body{
             list-style: none;
             color: white;
             top: 17px;
-                
-            li{
+
+            li {
                 padding: 1em 0;
                 border-bottom: 1px solid #1C1C1C;
                 background: black;
-                    
+
             }
-                
-            a:hover{
+
+            a:hover {
                 color: var(--primary-color);
             }
 
         }
 
-        [id=btn1]:checked + ul {
+        [id=btn1]:checked+ul {
             display: block;
         }
 
-        [id=btn2]:checked + ul {
+        [id=btn2]:checked+ul {
             display: block;
         }
 
         label {
             color: white;
-            cursor: pointer; 
+            cursor: pointer;
 
-            &:hover{
+            &:hover {
                 color: var(--primary-color);
             }
         }
 
-        input{
+        input {
             display: none;
         }
 
     }
 
-    .logo{  
+    .logo {
         text-decoration: none;
         font-size: 2rem;
         color: white;
         padding-top: .1em;
 
-        span{
+        span {
             color: var(--primary-color);
         }
     }
 
     .odkazy {
         padding-top: 1em;
-            
+
         a {
             text-decoration: none;
             width: 8%;
@@ -132,40 +131,40 @@ body{
             }
 
             .gitHub {
-                    width: 30px;
+                width: 30px;
             }
         }
     }
-}   
+}
 
 //hlavní sekce
-.hero{
-    grid-area: 2 / 1 / 3 / 4 ;
+.hero {
+    grid-area: 2 / 1 / 3 / 4;
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-content: center;
     justify-items: center;
     margin: 0 5vw;
 
-    .hi{
-        color: white;  
+    .hi {
+        color: white;
         padding: 0;
         margin: 0;
         font-size: 1.5rem;
     }
 
-    h1{
+    h1 {
         color: white;
         padding: 0;
         margin: 0;
         font-size: 4rem;
     }
 
-    .hero-img{
-        width: 300px;  
+    .hero-img {
+        width: 300px;
     }
 
-    .subhead{
+    .subhead {
         padding: 0;
         margin: 0;
         color: white;
@@ -173,10 +172,10 @@ body{
     }
 }
 
-.hero-cta{
+.hero-cta {
     margin-top: 3em;
-    
-    .primary-cta{
+
+    .primary-cta {
         background-color: var(--primary-color);
         color: white;
         text-decoration: none;
@@ -184,19 +183,19 @@ body{
         border-radius: 5em;
         cursor: pointer;
         font-weight: bold;
-    
+
         &:hover {
             background-color: white;
-            color: var(--primary-color); 
+            color: var(--primary-color);
         }
     }
 }
 
 //sekce popisu
-.features{
+.features {
     background: #212121;
     color: white;
-    grid-area: 3 / 1 / 4 /4; 
+    grid-area: 3 / 1 / 4 /4;
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-content: center;
@@ -204,31 +203,31 @@ body{
     margin: 0 5vw;
 }
 
-.subfeatures{
+.subfeatures {
     font-size: 1.1rem;
-} 
+}
 
-.img-gallery{
+.img-gallery {
     display: flex;
 
     .bench {
         width: 225px;
         cursor: pointer;
         z-index: 1;
-    
+
         &:hover {
             transform: scale(1.1);
-         }
+        }
     }
 
-    .tabor{
+    .tabor {
         position: relative;
         width: 200px;
         left: 100px;
         opacity: 50%;
         cursor: pointer;
-    
-        &:hover{
+
+        &:hover {
             z-index: 2;
             opacity: 100%;
             transform: scale(1.1);
@@ -241,8 +240,8 @@ body{
         opacity: 50%;
         right: 100px;
         cursor: pointer;
-    
-        &:hover{
+
+        &:hover {
             z-index: 1;
             opacity: 100%;
             transform: scale(1.1);
@@ -251,7 +250,7 @@ body{
 }
 
 //sekce kontaktu
-.contactMe{
+.contactMe {
     grid-area: 4 / 1 / 5 /4;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -259,106 +258,112 @@ body{
     margin: 0 5vw;
     color: white;
 
-    .contact-left{
-         width: 80%; 
+    .contact-left {
+        width: 80%;
     }
 
-    label{
+    label {
         display: block;
     }
 
-    input, textarea{
-            width: 100%;
-            border-radius: .3em;
-            padding: .8em;
-            box-sizing: border-box;
+    input,
+    textarea {
+        width: 100%;
+        border-radius: .3em;
+        padding: .8em;
+        box-sizing: border-box;
     }
 
-       input, email{
-            width: 50%;
-            border-radius: .3em;
-            padding: .8em;
-            box-sizing: border-box;
+    input,
+    email {
+        width: 50%;
+        border-radius: .3em;
+        padding: .8em;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        background-color: var(--primary-color);
+        color: white;
+        font-size: .8rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 5em;
+        cursor: pointer;
+        padding: .8em 2em;
+        display: flex;
+        width: unset;
+
+        &:hover {
+            background-color: white;
+            color: var(--primary-color);
         }
+    }
 
-        input[type="submit"]{
-            background-color: var(--primary-color);
-            color: white;
-            font-size: .8rem;
-            font-weight: bold;
-            border: none;
-            border-radius: 5em;
-            cursor: pointer;
-            padding: .8em 2em;
-            display: flex;
-            width: unset;
+    .contact-right {
 
-            &:hover{
-                background-color: white;
+        .podpis {
+            margin-bottom: 3em;
+
+            h2 {
+                margin: 1em 0 0 0;
+            }
+
+            h3 {
+                margin: 0;
+                padding: 0;
                 color: var(--primary-color);
             }
         }
 
-        .contact-right{
-            
-            .podpis{
-                margin-bottom: 3em;
+        p {
+            color: white;
+            margin: 0;
 
-                h2{
-                    margin: 1em 0 0 0;
-                }
-
-                h3{
-                    margin: 0;
-                    padding: 0;
-                    color: var(--primary-color);
-                }
-            }
-
-            p{
-                color: white;
-                margin: 0;
-                span{
-                    color: var(--primary-color);
-                }
-            }
-
-            iframe{
-                margin-top: 1em;
-                margin-right: 3em;
-                height: 150px;
-                width: 100%;
+            span {
+                color: var(--primary-color);
             }
         }
+
+        iframe {
+            margin-top: 1em;
+            margin-right: 3em;
+            height: 150px;
+            width: 100%;
+        }
+    }
 }
 
 //stránka pro školní projekty
 
-.hero-school{
+.hero-school {
     grid-area: 2 / 1 / 3 /4;
     color: white;
     margin: 0 5vw;
     grid-template-columns: 1fr 1.5fr;
     display: grid;
 
-        h1{
-            font-size: 3rem;
-            text-decoration: underline;
-            text-underline-offset: 10px;
-        }
-        .gitHub{
-            width: 10%;
-            cursor: pointer;
-        }
-        .maze-popis{
-            padding: 4vw;
-        }
-        .maze{
-            margin: 3vw;
-        }
+    h1 {
+        font-size: 3rem;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+    }
+
+    .gitHub {
+        width: 10%;
+        cursor: pointer;
+    }
+
+    .maze-popis {
+        padding: 4vw;
+    }
+
+    .maze {
+        margin: 3vw;
+    }
 }
 
-.features-school{
+.features-school {
     grid-area: 3 / 1 / 4 /4;
     color: white;
     margin: 0 5vw;
@@ -366,23 +371,27 @@ body{
     display: grid;
     background: #212121;
 
-    h1{
+    h1 {
         font-size: 3rem;
         text-decoration: underline;
         text-underline-offset: 10px;
     }
-    .gitHub{
+
+    .gitHub {
         width: 10%;
         cursor: pointer;
     }
-    .block-popis{
+
+    .block-popis {
         padding: 4vw;
     }
-    .block{
+
+    .block {
         height: 700px;
         margin: 3vw;
     }
-    .block2{
+
+    .block2 {
         height: 700px;
         margin: 3vw;
         display: none;
@@ -391,40 +400,40 @@ body{
 
 //stránka pro hry
 
-.hero-game{
+.hero-game {
     grid-area: 2 / 1 / 3 /4;
     color: white;
     text-align: center;
     margin: 10em 0 10em 0;
 
-    h1{
+    h1 {
         font-size: 3rem;
     }
 }
 
-.features-game{
+.features-game {
     grid-area: 3 / 1 / 4 /4;
     text-align: center;
     color: white;
     background-color: #212121;
 
-    h1{
+    h1 {
         font-size: 3rem;
         text-underline-offset: 10px;
         text-decoration: underline;
 
     }
 
-    .choice{
+    .choice {
         display: flex;
         justify-content: space-around;
     }
 
-    span{
+    span {
         color: var(--primary-color);
     }
 
-    button{
+    button {
         background-color: var(--primary-color);
         color: white;
         font-weight: bold;
@@ -434,8 +443,8 @@ body{
         padding: 1em;
         margin: 1em;
         width: 150px;
-        
-        &:hover{
+
+        &:hover {
             background-color: white;
             color: var(--primary-color);
         }
@@ -444,115 +453,115 @@ body{
 
 //stránka pro video
 
-.hero-video{
+.hero-video {
     color: white;
     grid-area: 2 / 1 / 3 /4;
     text-align: center;
     margin: 10em 0 10em 0;
 
-    h1{
+    h1 {
         font-size: 3rem;
     }
 }
 
 //stránka o mě
-.grid-container-about{
+.grid-container-about {
     display: grid;
     grid-template-columns: 1.5fr 1fr .5fr;
     grid-template-rows: .1fr 0.3fr 2fr .5fr;
     margin-top: 2em;
 }
 
-.hero-about{
+.hero-about {
     grid-area: 2 / 1 / 3 /4;
     color: white;
     text-align: center;
     margin: 0 5vw;
-    
-    h1{
+
+    h1 {
         font-size: 3rem;
         text-decoration: underline;
         text-underline-offset: 10px;
     }
 }
 
-.features-about{
-    grid-area: 3 / 1 / 4 / 4 ;
+.features-about {
+    grid-area: 3 / 1 / 4 / 4;
     padding: 1em 0 1em 0;
     color: white;
     text-align: center;
     background: #212121;
     margin: 0 5vw;
 
-    a{
+    a {
         color: var(--primary-color);
     }
 
-    span{
+    span {
         color: var(--primary-color);
     }
 
-    .uvod{
+    .uvod {
         display: grid;
         grid-template-columns: 1fr;
     }
 
-    .container{
+    .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: 3em 3em;
-        
-        .img-pc{
 
-            img{
+        .img-pc {
+
+            img {
                 max-width: 35%;
                 height: auto;
             }
         }
 
-        .img-ja{
+        .img-ja {
 
-            img{
+            img {
                 max-width: 20%;
             }
-        }  
+        }
 
-        .img-my{
-            img{
+        .img-my {
+            img {
                 max-width: 25%;
             }
-        }  
-        
-        .img-alex{
+        }
+
+        .img-alex {
             display: flex;
             justify-content: center;
-            
 
-            .titulni-alex{
+
+            .titulni-alex {
                 max-width: 50%;
                 z-index: 1;
                 cursor: pointer;
-        
+
                 &:hover {
                     z-index: 0;
-                 }
+                }
             }
 
-            .ostatni-img{
+            .ostatni-img {
                 position: absolute;
                 max-width: 20%;
                 opacity: 50%;
                 cursor: pointer;
-               
-                &:hover{
+
+                &:hover {
                     z-index: 1;
                     opacity: 100%;
                 }
             }
-        }     
+        }
     }
 
-    .future{
+    .future {
         margin-top: 4em;
     }
 }
@@ -560,23 +569,23 @@ body{
 //zobrazení pro mobil
 @media only screen and (max-width:1000px) {
 
-    .grid-container{
+    .grid-container {
         grid-template-columns: 1fr 1fr;
-        margin: 0; 
-    }
-
-    .grid-container-about{
         margin: 0;
     }
 
-    .navbar{
+    .grid-container-about {
+        margin: 0;
+    }
+
+    .navbar {
         display: grid;
         grid-template-columns: .5fr 1fr;
         align-items: center;
         justify-items: end;
         padding: 2em 0;
 
-        nav{
+        nav {
             display: none;
             position: fixed;
             z-index: 999;
@@ -587,20 +596,20 @@ body{
             height: 100vh;
             padding: 1em;
 
-            ul{
+            ul {
                 display: block;
                 margin-top: 7vw;
 
-                .current{
+                .current {
                     font-weight: normal;
                     text-decoration: none;
                     color: var(--primary-color);
-                }   
+                }
 
-                li { 
+                li {
                     width: auto;
-               
-                    label{
+
+                    label {
                         display: none;
                     }
 
@@ -610,7 +619,7 @@ body{
                         display: block;
                         font-size: 3em;
                         text-align: right;
-            
+
                         &:hover {
                             font-weight: bold;
                         }
@@ -618,13 +627,13 @@ body{
                 }
             }
 
-            ul.pod-menu{
+            ul.pod-menu {
                 display: block;
                 position: static;
                 height: auto;
 
-                li{
-                    a{
+                li {
+                    a {
                         font-size: 3em;
                         font-weight: normal;
                         margin: 0;
@@ -634,8 +643,9 @@ body{
                         &:hover {
                             font-weight: bold;
                         }
-                        
+
                     }
+
                     background: #212121;
                     border: none;
                 }
@@ -650,107 +660,107 @@ body{
             }
         }
 
-        .odkazy{
+        .odkazy {
             display: none;
         }
 
-        .mobile-menu{
+        .mobile-menu {
             display: block;
             padding-right: 4vw;
             cursor: pointer;
             width: 9%;
         }
 
-        .logo{
+        .logo {
             font-size: 3.5em;
             padding-left: 1em;
-            
+
         }
     }
 
-    nav.menu-btn{
+    nav.menu-btn {
         display: block;
     }
 
 
-    .contactMe{
+    .contactMe {
         grid-template-columns: 1fr;
-            
-        .contact-left{
+
+        .contact-left {
             width: 80%;
 
-            input[type="submit"]{
+            input[type="submit"] {
                 font-size: 1.5em;
             }
         }
     }
 
-    .features{
+    .features {
         grid-template-columns: 1fr;
         padding-top: 2em;
-        
-        .subfeatures{
+
+        .subfeatures {
             margin: 2vw 7vw
         }
     }
 
-    .hero-about{
+    .hero-about {
         font-size: 2em;
 
-        h1{
+        h1 {
             font-size: 3em;
         }
     }
 
-    .features-about{
+    .features-about {
         font-size: 2em;
-        
-        .container{
+
+        .container {
             display: block;
 
-            img{
+            img {
                 display: none;
             }
         }
     }
 
-    .hero{
+    .hero {
         grid-template-columns: 1fr;
 
-        .hi{
+        .hi {
             font-size: 2em;
         }
-        h1{
+
+        h1 {
             font-size: 5em;
         }
 
-        .subhead{
+        .subhead {
             font-size: 2em;
         }
 
-        .primary-cta{
+        .primary-cta {
             font-size: 1.5em;
         }
     }
 
-    .subfeatures{
+    .subfeatures {
         font-size: 2em;
-    } 
+    }
 
-    .hero-school{
+    .hero-school {
         display: block;
     }
 
-    .features-school{
+    .features-school {
         display: block;
-        
-        .block{
+
+        .block {
             display: none;
         }
-        .block2{
+
+        .block2 {
             display: block;
         }
     }
 }
-
-
